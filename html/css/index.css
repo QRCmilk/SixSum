@@ -1,0 +1,485 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  /* 将高度设置为100% */
+}
+
+
+.header {
+  padding: 10px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  z-index: 999;
+}
+
+.header-scroll {
+  background-color: rgba(194, 40, 40, 0.795);
+  padding: 15px;
+}
+
+.header-scroll .logo {
+  transform: translateY(0px);
+}
+
+.header-scroll .logo img {
+  margin-top: -5px;
+  width: 165px;
+  height: 40px;
+}
+
+.header-scroll .logo h1 {
+  font-size: 20px;
+}
+
+.header-scroll .nav a {
+  margin-left: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.logo img {
+  width: 170px;
+  height: 45px;
+  margin-right: 40px;
+  margin-left: 20px;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+
+}
+
+
+
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -30px;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  margin-right: 10px;
+  color: rgb(245, 243, 243);
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.owl-carousel {
+  position: relative;
+  height: 100%;
+  margin-top: 0;
+  /* 将 margin-top 设置为0 */
+
+}
+
+
+.owl-carousel .item {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.owl-carousel .item img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  max-width: 100%;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.owl-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #888;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.owl-dot.active {
+  background-color: #333;
+}
+
+.owl-carousel .item .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*更改 從50到35*/
+  transform: translate(-50%, -50%);
+  background-color: rgba(75, 71, 71, 0.596);
+  height: 30%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .item .overlay .content {
+  text-align: center;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.owl-carousel .item .content {
+  text-align: center;
+  color: #fff;
+}
+
+.owl-carousel .item .content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.owl-carousel .item .content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.owl-carousel .item .content .contact-btn {
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.owl-carousel .item .content .contact-btn:hover {
+  background-color: #b30000;
+}
+
+.buyandsell p {
+  color: #f60f0f;
+  padding-left: 20%;
+  font-weight: bolder;
+  font-size: 13px;
+  text-align: center;
+}
+
+.buyandsell h2 {
+  color: #000;
+  font-weight: bolder;
+  padding-left: 20%;
+  font-size: 36px;
+  text-align: center;
+}
+
+.buyandsell h6 {
+  padding-left: 20%;
+  text-align: center;
+}
+
+.buyandsell hr {
+  font-family: Avenir, sans-serif;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: solid;
+  border-top-color: rgb(234, 234, 234);
+  height: 1px;
+  width: 120%;
+  margin: 1em 0px;
+  padding: 0px;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  white-space: normal;
+
+
+}
+
+
+
+.footer {
+  background-color: #F8F8F8;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-row {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: red;
+}
+
+.footer-icon-link {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer-icon-link i {
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-icon-link:hover i {
+  color: red;
+}
+
+.footer-icon-link:hover svg path {
+  fill: rgba(194, 40, 40);
+}
+
+.about {
+  color: red;
+  left: 15%;
+  position: relative;
+}
+
+/*許*/
+/*影片*/
+.media {
+  width: 1140px;
+  height: 460px;
+  position: relative;
+  /* Allows for absolute positioning of iframe */
+}
+
+.video {
+  height: 100%;
+}
+
+.video iframe {
+  padding-left: 26%;
+  padding-right: 26%;
+
+}
+
+@media (max-width: 1200px) {
+  .media {
+    width: 960px;
+    height: 385px;
+  }
+}
+
+@media (max-width: 992px) {
+  .media {
+    width: 720px;
+    height: 285px;
+  }
+}
+
+@media (max-width: 768px) {
+  .media {
+    width: 540px;
+    height: 255px;
+  }
+}
+
+@media (max-width: 575px) {
+  .media {
+    width: 100%;
+    /* Video takes full width of screen */
+    height: 0;
+    /* Set height to 0 */
+    padding-top: 56.25%;
+    /* Aspect ratio of 16:9 */
+  }
+}
+
+/*影片*/
+/*輸入表單*/
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 164px;
+  /* 可依需要調整 */
+  margin-right: 20px;
+  /* 右邊間隔 */
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 350px;
+  /* Default width */
+}
+
+.input-field input {
+  width: 100%;
+  /* Full width */
+  height: 41.5px;
+  /* 提升高度 */
+  box-sizing: border-box;
+}
+
+.textarea-section {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  /* 與.input-section相等 */
+  width: 350px;
+  /* Default width */
+}
+
+.textarea-section textarea {
+  width: 100%;
+  /* Full width */
+  height: 165px;
+  /* 提升高度 */
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+
+  .input-field,
+  .textarea-section {
+    width: 290px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .input-field,
+  .textarea-section {
+    width: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .input-field,
+  .textarea-section {
+    width: 510px;
+    margin-right: 0;
+    margin-top: 0%;
+  }
+
+  .input-section {
+    margin-right: 0;
+    margin-bottom: 4%;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .input-field,
+  .textarea-section {
+    width: 90vw;
+    /* NEW: Change width to 95% of the viewport width */
+    min-width: 0;
+    /* NEW: Change minimum width to 0 */
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.submit-button {
+  background-color: rgb(188, 15, 15);
+  height: 100px;
+  width: 100px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.submit-button:hover {
+  background-color: #d90a0a;
+  transition: 0.4s;
+}
+
+/*輸入表單*/
+
+/*聯絡資訊*/
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-section {
+  width: 23%;
+}
+
+.contact-section i {
+  font-size: 24px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-info a:hover {
+  color: red;
+  transition: 0.4s;
+}
+
+@media (max-width: 770px) {
+  .contact-info {
+    display: block;
+  }
+
+  .contact-section {
+    width: 100%;
+  }
+}
+
+/*聯絡資訊*/
+
+/*許*/

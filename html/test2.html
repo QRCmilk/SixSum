@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <style>
+        #background {
+            background-image: url('img/13.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 300%;
+            /* 將圖片放大到三倍高度 */
+            height: 333px;
+            /* 設定你想要的元素高度 */
+            width: 100%;
+            /* 設定你想要的元素寬度 */
+            position: relative;
+        }
+
+        #text {
+            position: absolute;
+            top: 50%;
+            /* 文字位於中間，可以依需求調整 */
+            left: 0;
+            right: 0;
+            text-align: center;
+            /* 讓文字置中 */
+        }
+    </style>
+
+    <div id="background">
+        <div id="text">11122544</div>
+    </div>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var scrollPercentage = (window.scrollY - document.getElementById('background').offsetTop) / (document.body.scrollHeight - window.innerHeight);
+            document.getElementById('background').style.backgroundPosition = '0 ' + (scrollPercentage * 100 - 33) + '%';
+        });
+    </script>
+</body>
+
+</html>
